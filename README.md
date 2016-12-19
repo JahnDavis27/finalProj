@@ -11,3 +11,4 @@ Jahn Davis
 Moses Mangunrahardja
 
 
+Heroku deploy: https://studentsenate-jrd58.herokuapp.com/
