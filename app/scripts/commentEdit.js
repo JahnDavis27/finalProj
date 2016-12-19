@@ -253,7 +253,6 @@ module.exports = React.createClass({
         return (
 			<div>
                 <form className="commentForm">
-                	<Link to={'/'} type="button">Back</Link>
                     <h1>Item Request Form - {this.state.author}</h1>
                     <h3>Current Renter - {this.state.text}</h3>
                     <h4>Waiting List: </h4>
@@ -270,7 +269,7 @@ module.exports = React.createClass({
                     <button type="button" onClick={this.waitMethod}>Update</button>
                     <button type="button" onClick={this.waitReturnMethod}>Return</button>
                 </form>
-                <Link to='/'>Cancel</Link>
+                <Link to='/'>Back</Link>
             </div>
 			
         );
