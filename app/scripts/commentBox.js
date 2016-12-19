@@ -51,7 +51,9 @@ module.exports = React.createClass({
     let isAdmin = this.props.isAdmin;
     if (isAdmin){
         return (
+            //Allows back button to go to normal view from admin view
             <div className="commentBox">
+                <Link to={'/'} type="button">Back</Link>
                 <h1>Admin Page</h1>
                 <CommentList data={this.state.data} isAdmin={this.props.isAdmin}/>
                 <p></p>
@@ -64,7 +66,7 @@ module.exports = React.createClass({
         return (
             <div className="commentBox">
 
-                <Link to={'/admin'} type="button">Administrator Features</Link>
+                <Link to={'/admin'} type="button">Admin Features</Link>
                 <h1>Equipment Rental</h1>
                 <CommentList data={this.state.data} isAdmin={this.props.isAdmin}/>
             </div>
